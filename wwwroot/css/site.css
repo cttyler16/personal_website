@@ -2324,16 +2324,13 @@ body {
 .heading{
     text-align: center;
     font-family: Mina-Regular;
-}
-
-#page-heading .heading {
-    font-family: Mina-Regular;
-    font-size: 500%
+    font-size: 500%;
 }
 
 .sub-heading {
     text-align: center;
-    font-family: Mina-Regular
+    font-family: Mina-Regular;
+    font-size: 125%;
 }
 
 .center{
@@ -2444,11 +2441,13 @@ body {
     user-select: none;
     -webkit-user-select: none
 }
+
 /* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px
 }
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
@@ -2462,6 +2461,7 @@ body {
     position: absolute;
     top: 0
 }
+
 /* Caption text */
 .caption-container {
     text-align: center;
@@ -2469,22 +2469,28 @@ body {
     padding: 2px 16px;
     color: white
 }
+
 img.demo {
     opacity: 0.6
 }
+
 .active,
 .demo:hover {
     opacity: 1
 }
+
 img.hover-shadow {
     transition: 0.3s
 }
+
 .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
+
 .text-mina {
     font-family: Mina-Regular;
 }
+
 .img-experience{
     width: 200px;
     height: 200px;
@@ -2492,6 +2498,23 @@ img.hover-shadow {
     border: outset;
 }
 
-.offset-top-20 {
-    margin-top: 20px
+.experience-title {
+    color: cadetblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.experience-title a:hover{
+   color: teal; 
+   text-decoration: none;
+   transition: color 1.0s ease;
+}
+
+.info-left {
+    float: left;
+}
+
+.info-right {
+    float: right;
+    margin-left: 10px;
 }
