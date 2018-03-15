@@ -1,15 +1,12 @@
 ﻿<Properties StartupConfiguration="{0D48BABE-F10C-415A-B5C8-3079D2009467}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="Views/Home/About.cshtml" Line="7" Column="11" />
-      <File FileName="Views/Home/Index.cshtml" Line="72" Column="57" />
-      <File FileName="Views/Home/Contact.cshtml" Line="2" Column="33" />
-      <File FileName="Views/Home/Resume.cshtml" Line="9" Column="29" />
-      <File FileName="wwwroot/css/site.css" Line="2340" Column="2" />
-      <File FileName="wwwroot/css/site.min.css" Line="1" Column="1" />
-      <File FileName="Views/Shared/Error.cshtml" Line="1" Column="1" />
-      <File FileName="Views/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
-      <File FileName="Views/Shared/_Layout.cshtml" Line="79" Column="10" />
+      <File FileName="Views/Home/About.cshtml" Line="1" Column="70" />
+      <File FileName="Views/Home/Index.cshtml" Line="73" Column="10" />
+      <File FileName="Views/Home/Contact.cshtml" Line="4" Column="1" />
+      <File FileName="Views/Home/Resume.cshtml" Line="24" Column="6" />
+      <File FileName="wwwroot/css/site.css" Line="3" Column="26" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="19" Column="7" />
       <File FileName="Properties/launchSettings.json" Line="1" Column="1" />
       <File FileName="Controllers/HomeController.cs" Line="9" Column="11" />
       <File FileName="Views/_ViewImports.cshtml" Line="1" Column="1" />
@@ -17,6 +14,11 @@
       <File FileName="Models/ErrorViewModel.cs" Line="3" Column="11" />
       <File FileName="Program.cs" Line="11" Column="11" />
       <File FileName="Startup.cs" Line="10" Column="11" />
+      <File FileName="wwwroot/js/site.js" Line="1" Column="1" />
+      <File FileName="wwwroot/js/_layout.js" Line="4" Column="8" />
+      <File FileName="wwwroot/js/jquery-3.3.1.min.js" Line="3" Column="1" />
+      <File FileName="wwwroot/js/about.js" Line="2" Column="14" />
+      <File FileName="Views/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

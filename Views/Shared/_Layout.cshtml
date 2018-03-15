@@ -15,14 +15,15 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <div class="navbar" id="navbar">
         <div style="text-align: center">
-          <a asp-area="" asp-controller="Home" asp-action="Index" class="navelement">HOME</a>
-          <a asp-area="" asp-controller="Home" asp-action="About" class="navelement">ABOUT</a>
-          <a asp-area="" asp-controller="Home" asp-action="Resume" class="navelement">RESUME</a>
-          <a asp-area="" asp-controller="Home" asp-action="Contact" class="navelement">CONTACT</a>
+          <a asp-area="" asp-controller="Home" asp-action="Index" class="navelement" id ="home">HOME</a>
+          <a asp-area="" asp-controller="Home" asp-action="About" class="navelement" id = "about">ABOUT</a>
+          <a asp-area="" asp-controller="Home" asp-action="Resume" class="navelement" id = "resume">RESUME</a>
+          <a asp-area="" asp-controller="Home" asp-action="Contact" class="navelement" id = "contact">CONTACT</a>
           <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveTabs()">&#9776;</a>
         </div>
     </div>
@@ -59,21 +60,4 @@
 </body>
 </html>
 
-<script>
-function responsiveTabs() {
-    var x = document.getElementById("navbar");
-    if (x.className === "navbar") {
-        x.className += " responsive";
-    } else {
-        x.className = "navbar";
-    }
-}
-
-$(document).ready(function () {
-        var url = window.location;
-        $('div.navbar a').parent().addClass('active');
-        $('div.navbar a').filter(function() {
-             return this.href == url;
-        }).parent().addClass('active');
-});  
-</script>
+<script type="text/javascript" src="~/js/_layout.js"></script>
