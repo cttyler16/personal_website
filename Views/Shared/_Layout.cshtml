@@ -19,7 +19,7 @@
 </head>
 <body>
     <div class="navbar" id="navbar">
-        <div style="text-align: center">
+        <div style="text-align: right">
           <a asp-area="" asp-controller="Home" asp-action="Index" class="navelement" id ="home">HOME</a>
           <a asp-area="" asp-controller="Home" asp-action="About" class="navelement" id = "about">ABOUT</a>
           <a asp-area="" asp-controller="Home" asp-action="Resume" class="navelement" id = "resume">RESUME</a>
@@ -27,9 +27,9 @@
           <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveTabs()">&#9776;</a>
         </div>
     </div>
-    <div class="container body-content">
+    
+    <div class="">
         @RenderBody()
-        <hr />
         <footer class="copyright">
             <p>&copy; 2018 - Caroline Tingwei Tyler</p>
         </footer>
