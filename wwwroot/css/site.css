@@ -2251,6 +2251,7 @@ input[type=checkbox].w3-check, input[type=radio].w3-radio {
     color: #3AAFA9;
     font-family: Mina-Regular;
     margin-top: 30px;
+    margin-left: 30px;
 }
 
 .navbar {
@@ -2403,6 +2404,42 @@ body {
     }
 }
 
+.textWithBlurredBg{
+    position: relative;
+}
+
+.textWithBlurredBg img{
+    width: 100%;
+    height: 100;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.textWithBlurredBg:hover img{
+    filter: blur(2px) brightness(50%);
+    transition: .3s;
+}
+
+.textWithBlurredBg :not(img){
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: .3s;
+    font-family: Mina-Regular;
+}
+
+.textWithBlurredBg h3{
+    top: 50%;
+}
+
+.textWithBlurredBg:hover :not(img){
+    opacity:1;
+}
+
 img.demo {
     opacity: 0.6
 }
@@ -2470,15 +2507,31 @@ img.hover-shadow {
     margin-right: 100px;
 }
 
+.resume-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #8FC1E3 !important;
+    border: none;
+}
+
+.about-description {
+    font-size: 25px;
+    font-color: #8FC1E3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
 .colored-section {
     background-color: #F7F9FB;
     padding-top: 25px;
     padding-bottom: 25px;
     margin-top: 25px;
+    border-width: 5px;
     border-bottom: solid;
     border-top: solid;
-    border-color: #eaebed;
-}
+    border-color: #eaebed;}
 
 .info-left {
     float: left;
@@ -2499,13 +2552,16 @@ body{
 .hero-image {
     /* The image used */
     background-image: url(../images/gallery_1.jpg);
+    background-attachment: fixed;
     /* Set a specific height */
-    height: 75%;
+    height: 85%;
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative
+    position: relative;
+    border-bottom: solid;
+    border-color: #eaebed;
 }
 
 /* Place text in the middle of the image */
@@ -2520,6 +2576,16 @@ body{
     border: solid;
     border-width: thick;
     padding: 15px;
+}
+
+.marginalized-100 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.marginalized-15 {
+    margin-left: 15px;
+    margin-right: 15px
 }
 
 .resume-section{
