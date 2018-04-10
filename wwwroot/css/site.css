@@ -2240,11 +2240,10 @@ input[type=checkbox].w3-check, input[type=radio].w3-radio {
 
 
 /*
-    OWN CSS
-
+Custom CSS
 */
 .page-background {
-    background-color: #FEFFFF
+    background-color: #FEFFFF;
 }
 
 .copyright {
@@ -2274,7 +2273,7 @@ input[type=checkbox].w3-check, input[type=radio].w3-radio {
     -moz-transition: all 1.0s ease-in-out;
     -ms-transition: all 1.0s ease-in-out;
     -o-transition: all 1.0s ease-in-out;
-    transition: all 1.0s ease-in-out
+    transition: all 1.0s ease-in-out;
 }
 
 .home-page-navbar {
@@ -2343,11 +2342,11 @@ input[type=checkbox].w3-check, input[type=radio].w3-radio {
 
 @media screen and (max-width: 600px) {
     .navbar a {
-        display: none
+        display: none;
     }
     .navbar a.icon {
         float: right;
-        display: block
+        display: block;
     }
 }
 
@@ -2434,7 +2433,7 @@ body {
 
 .spacer {
     width: 100%;
-    height: 95px
+    height: 95px;
 }
 
 .row {
@@ -2454,7 +2453,7 @@ body {
 
 .column img {
     margin-top: 8px;
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -2462,7 +2461,7 @@ body {
     .column {
         -ms-flex: 50%;
         flex: 50%;
-        max-width: 50%
+        max-width: 50%;
     }
 }
 
@@ -2471,8 +2470,7 @@ body {
     .column {
         -ms-flex: 100%;
         flex: 100%;
-        max-width: 100%
-    }
+        max-width: 100%;    }
 }
 
 .textWithBlurredBg{
@@ -2512,20 +2510,20 @@ body {
 }
 
 img.demo {
-    opacity: 0.6
+    opacity: 0.6;
 }
 
 .active,
 .demo:hover {
-    opacity: 1
+    opacity: 1;
 }
 
 img.hover-shadow {
-    transition: 0.3s
+    transition: 0.3s;
 }
 
 .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .text-mina {
@@ -2570,12 +2568,12 @@ img.hover-shadow {
 
 .experience-subtitle {
     color: #8FC1E3;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .experience-description {
     color: #17252A;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .experience-section {
@@ -2672,19 +2670,7 @@ body{
 
 .marginalized-15 {
     margin-left: 15px;
-    margin-right: 15px
-}
-
-.resume-section{
-
-}
-
-.about-section{
-    
-}
-
-.home-section{
-    
+    margin-right: 15px;
 }
 
 @keyframes slideInFromLeft {
