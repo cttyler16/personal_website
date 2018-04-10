@@ -2289,6 +2289,8 @@ input[type=checkbox].w3-check, input[type=radio].w3-radio {
     -o-transition: all 1.0s ease-in-out;
     transition: all 1.0s ease-in-out;
     margin-top: 25px;
+    text-align: center;
+
 }
 
 .navbar a {
@@ -2349,9 +2351,14 @@ input[type=checkbox].w3-check, input[type=radio].w3-radio {
     }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1200px){
     .home-page-navbar {
-        margin-top: 50px;    }
+        margin-top: 10px;    }
+}
+
+@media screen and (max-width: 600px) {
+    .home-page-navbar {
+        margin-top: 60px;    }
 }
 
 @media screen and (max-width: 600px) {
@@ -2397,14 +2404,16 @@ body {
 .heading {
     text-align: center;
     font-family: Mina-Regular;
-    font-size: 6vw;
+    font-size: 5.75vw;
     color: #31708E;
+    animation: 1.5s ease-out 0s 1 slideInFromLeft;
 }
 
 .sub-heading {
     text-align: center;
     font-family: Mina-Regular;
     font-size: 1.5vw;
+    animation: 1.5s ease-out 0s 1 slideInFromTop;
 }
 
 @media screen and (max-width: 700px) {
@@ -2678,5 +2687,24 @@ body{
     
 }
 
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-200%)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
 
 
