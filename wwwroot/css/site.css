@@ -2254,6 +2254,13 @@ input[type=checkbox].w3-check, input[type=radio].w3-radio {
     margin-left: 30px;
 }
 
+.home-page-copyright {
+    color: #3AAFA9;
+    font-family: Mina-Regular;
+    margin-left: 30px;
+    padding:0;
+    margin:0;}
+
 .navbar {
     overflow: hidden;
     /*background-color: #24305E;*/
@@ -2270,20 +2277,56 @@ input[type=checkbox].w3-check, input[type=radio].w3-radio {
     transition: all 1.0s ease-in-out
 }
 
+.home-page-navbar {
+    top: 35%;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    z-index: 500;
+    -webkit-transition: all 1.0s ease-in-out;
+    -moz-transition: all 1.0s ease-in-out;
+    -ms-transition: all 1.0s ease-in-out;
+    -o-transition: all 1.0s ease-in-out;
+    transition: all 1.0s ease-in-out;
+    margin-top: 25px;
+}
+
 .navbar a {
     display: inline-block;
     color: #8FC1E3;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
     /*font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
     font-family: Mina-Regular;
     transition: color 1.0s ease;
 }
 
+
+.home-page-navbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    /*font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    font-family: Mina-Regular;
+    transition: color 1.0s ease;
+}
+
+@media screen and (max-width: 993px) {
+    .navbar a {
+        font-size: 2.5vw;
+    }
+}
+
 .navbar a:hover {
-    color: #687684;
+    color: #687684;}
+
+.home-page-navbar a:hover {
+    color: #8FC1E3;
 }
 
 .navbar .icon {
@@ -2291,14 +2334,24 @@ input[type=checkbox].w3-check, input[type=radio].w3-radio {
     color: #687684;
 }
 
+.home-page-navbar .icon {
+    display: none;
+    color: #687684;
+}
+
 @media screen and (max-width: 600px) {
-    .navbar a:not(:first-child) {
+    .navbar a {
         display: none
     }
     .navbar a.icon {
         float: right;
         display: block
     }
+}
+
+@media screen and (max-width: 800px){
+    .home-page-navbar {
+        margin-top: 50px;    }
 }
 
 @media screen and (max-width: 600px) {
@@ -2308,7 +2361,7 @@ input[type=checkbox].w3-check, input[type=radio].w3-radio {
     .navbar.responsive .icon {
         position: absolute;
         right: 0;
-        top: 0
+        top: 0;
     }
     .navbar.responsive a {
         float: none;
@@ -2344,14 +2397,23 @@ body {
 .heading {
     text-align: center;
     font-family: Mina-Regular;
-    font-size: 500%;
+    font-size: 6vw;
     color: #31708E;
 }
 
 .sub-heading {
     text-align: center;
     font-family: Mina-Regular;
-    font-size: 125%;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 700px) {
+    .sub-heading{
+        font-size: 3vw;
+    }
+    .heading{
+        font-size: 10vw;
+    }
 }
 
 .center{
@@ -2476,15 +2538,20 @@ img.hover-shadow {
 
 .experience-type {
     font-family: Mina-Regular;
-    color: #31708E;
-    font-size: 40px;
+    color: #508585;
+    font-size: 3vw;
     text-align: center;
 }
 
-.experience-title {
-    color: #508585;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+@media screen and (max-width: 1200px){
+    .experience-type{
+        font-size: 5vw;
+    }
 }
+
+.experience-title {
+    color: #31708E;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 
 .experience-title a:hover{
    color: #687684; 
@@ -2516,12 +2583,23 @@ img.hover-shadow {
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #8FC1E3 !important;
     border: none;
+    margin: 20px;
+    max-width: 100%;
 }
 
 .about-description {
-    font-size: 25px;
+    font-size: 1.5vw;
     font-color: #8FC1E3;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+/*
+    About Page Responsive
+*/
+@media screen and (max-width: 800px) {
+    .about-description{
+        font-size: 4vw;
+    }
+}
 
 .colored-section {
     background-color: #F7F9FB;
@@ -2554,7 +2632,7 @@ body{
     background-image: url(../images/gallery_1.jpg);
     background-attachment: fixed;
     /* Set a specific height */
-    height: 85%;
+    height: 100%;
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
@@ -2567,8 +2645,8 @@ body{
 /* Place text in the middle of the image */
 .hero-text {
     text-align: center;
-    position: absolute;
-    top: 50%;
+    position: fixed;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #F7F9FB;
